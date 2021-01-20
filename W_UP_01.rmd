@@ -57,13 +57,14 @@ basicCN <- ggplot(mydata,aes(x=position,y=pushups))
 basicCN + geom_boxplot()
 ```
   
-  
+This plotbox seems to show that skill position is able to do more pushups within the 2 minuet time line than the line position can.
 ### get fancy  
 
 ```{r}
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
-This boxplot shows that the skill players seem to be able to do more pushups in 2 minuets than the line players.
+
+This boxplot also shows that the skill players seem to be able to do more pushups in 2 minuets than the line players.
 
 
 ### Numerical Descriptive Results
@@ -75,6 +76,7 @@ This boxplot shows that the skill players seem to be able to do more pushups in 
 favstats(pushups~position,data=mydata)
 ```
 
+This table shows that the skill playes have more than dubbed the number of pushups that the line players have done in the amount of time.
 
 ## Inferential Results
 
